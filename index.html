@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="./assets/image/logo-tab.PNG"  type="image/x-icon">
+</head>
+
+<body >
+    <div class="loader-overlay">
+        <div class="container-loader ">
+            <div class="cube"><div class="cube__inner"></div></div>
+            <div class="cube"><div class="cube__inner"></div></div>
+            <div class="cube"><div class="cube__inner"></div></div>
+            <div class="cube"><div class="cube__inner"></div></div>
+          </div>
+    </div>
+  
+    <main id="container">
+ 
+        <nav id="nav-bar">
+            <img  src="./assets/image/logo.png" alt="download"  width="80"/></div> 
+            <ul  class="nav-ul">
+            <a href="#" class="nav" onclick="goTo('home')"><li>Home</li></a>
+            <a href="#" class="nav"  onclick="goTo('project')"><li>Projects</li></a>
+            <a href="#" class="nav"  onclick="goTo('experience')"><li>Experience</li></a>
+            <a href="#" class="nav"  onclick="goTo('about')"><li>About Me</li></a>
+            </ul>
+            <ul id="nav-ul-burger">
+                <div class="burger-menu burger-menu--closed">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+             </ul>
+        </nav>
+        <div id="nav-overlay" class="overlay" >
+            <a href="#" class="closebtn" >&times;</a>
+            <div class="overlay-content">
+                <a href="#"  class="nav1"  onclick="goTo('home')"><li>Home</li></a>
+                <a href="#"  class="nav1"  onclick="goTo('project')"><li>Projects</li></a>
+                <a href="#"  class="nav1"  onclick="goTo('experience')"><li>Experience</li></a>
+                <a href="#"  class="nav1"  onclick="goTo('about')"><li>About Me</li></a>
+            </div>
+        </div>
+  
+        <section id="home" class="active">
+            <div class="home-container">
+                <div id="home-content">  
+                
+                    <h4>Hello, I'm </h4>
+                    <h1 class="bounce-in-top animation">Jhon <span>Edward,</span></h1>
+                    <h3>a web developer.</h3>
+                    <div >
+                        <button class="download-button">
+                            <div class="docs"><div> <img  src="./assets/image/download.svg" alt="download"  width="20"/></div>   Resume</div>
+                            <a href="./assets/image/Jhon-edward-salvan.pdf" download>
+                                <div class="download">
+                                    <img  src="./assets/image/arrow-down.png" alt="download"  width="50"/></div> 
+                                </div>
+                            </a>
+                            
+                          </button>
+                    </div>
+               
+            </div>
+            </div>
+        </section>
+
+        <section id="project"    >
+          <div id="project-container">
+
+         
+            <div id="project-view" data-current-id="0">
+                <div class="card-picture">
+               
+                </div>
+                <div class="card-content">
+                        <h2 class="system"></h2>
+                        <h4 class="role"></h4>
+                        <div class="objective-container">
+                            <h4>OBJECTIVE</h4>
+                            <ul class="objective-list">
+                                
+                            </ul>
+                        </div>
+                        <div class="tech-stack-container">
+                            <h4>TECH STACK</h4>
+                            <div class="tech-list">
+                            </div>
+                            <button class="btn" onclick="toggleModal()" type="button" id="more-btn">Read more</button>
+                        </div>
+                </div>
+            </div>
+            <div id="project-selection">
+
+            </div>
+
+          </div>
+
+<!-- start modal for project details-->
+            <div class="modal-container" onclick="toggleModal()"></div>
+            <div class="modal-window">
+                <div class="card-container">
+                 
+                    <h2 class="system"></h2>
+                    <h4 class="role"></h4>
+                    <div class="objective-container">
+                        <h4>OBJECTIVE:</h4>
+                        <ul class="objective-list">
+                            
+                        </ul>
+                    </div>
+                    <div class="objective-container">
+                        <h4>ROLES AND RESPONSIBILITIES:</h4>
+                        <ul class="responsibilities-list">
+                            
+                        </ul>
+                    </div>
+                    <div class="tech-stack-container">
+                        <h4>TECH STACK</h4>
+                        <div class="tech-list">
+                        </div>
+                       
+                    </div>
+                   
+                </div>
+            </div>
+   <!-- end modal for project details-->
+
+            
+        </section>
+        <section id="experience" >
+            <div class="timeline">
+                <ul id="parentList">
+
+
+                </ul>
+              </div>
+
+
+        </section>
+
+        <section id="about" >
+            <div class="about-container">
+                <img class=" " src="./assets/image/blackwhite.jpg" >
+                <div class="about-text " >
+                    <h4>About Me</h4>
+                    <h5>FullStack <span>Developer</span></h5>
+                    <!-- <p>Experienced Full Stack Developer with a focus on PHP and the CodeIgniter framework. Skilled in both back-end and front-end development, proficient in server-side programming, database management, and API integration. Strong problem-solving abilities, committed to delivering clean code and meeting deadlines. Updated with industry trends and best practices. Track record of delivering high-quality projects. Ready to contribute PHP expertise to your organization's success.</p> -->
+                 <p>I am an experienced web developer with over three years of expertise, delivering high-impact web solutions for
+                  diverse industry organizations. Proficient in designing and developing multiple</p>
+                    <button class="btn" >lets Talks</button>
+                </div>  
+            </div>   
+
+        </section>
+
+    </main>
+
+
+   
+</body>
+
+<script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+<script src="assets/js/script.js"></script>
+
+</html>

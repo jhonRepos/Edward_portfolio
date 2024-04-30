@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import "./loader";
+@import "./home";
+@import "./project";
+@import "./experience";
+@import "./about";
+
+/*fonts*/
+$code: "Inconsolata";
+$text: "Montserrat";
+/*colors*/
+$navbar: transparent;
+
+*{
+    padding: 0;
+    margin: 0;
+    // font-family:'josefin Sans', sans-serif;
+    box-sizing: border-box;
+   font-family: 'Roboto Slab', serif;
+}
+
+body{
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+
+#container{
+  width: 100%;
+  min-width: 300px;
+  height: 100%;
+
+  #nav-bar{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-inline: 20px;
+
+    span{
+        color:#EF233C;
+    }
+    .nav-ul {
+      display: flex;
+      justify-content: end;
+      gap: 15px;
+       @media screen and (max-width: 560px) {
+           display:none;
+       }
+     li {
+      
+       list-style-type: none;
+       font-family: $text;
+       font-size: 1rem;
+       display: inline;
+        margin: 16px;
+       @media screen and (max-width: 780px) {
+           font-size: 0.9rem;
+           margin: 10px;
+           }
+       @media screen and (max-width: 550px) {
+           font-size: 0.7rem; 
+           margin: 5px;
+       }
+     }
+     a {
+       text-decoration: none;
+       color: white;
+       position: relative;
+       display: inline-block;
+       border-radius: 10px;
+       transition: background-color 0.3s, color 0.3s;
+     }
+     a:hover {
+       background: #EF233C;
+       color: white;
+     }
+     a:onclick {
+       background: black;
+       color: white;
+     }
+   }
+    #nav-ul-burger{
+        display: none;
+        @media screen and (max-width: 560px) {
+            display: flex;
+           flex-direction: column;
+            
+          }
+      .burger-menu {
+        width: 30px;
+        height: 25px;
+        display: block;
+        margin: 0 auto;
+        transition: all 0.3s ease-out;
+        cursor: pointer;
+      }
+      
+      .burger-menu .bar {
+        transition: all 0.3s ease-out;
+        height: 2px;
+        width: 100%;
+        display: block;
+        background-color: white;
+      }
+      
+      .burger-menu .bar:nth-of-type(2) {
+        margin: 8px 0;
+      }
+      
+      .burger-menu--closed {
+        transition-delay: 0.3s;
+      }
+      
+      .burger-menu--closed .bar:nth-of-type(2) {
+        width: 28px;
+        transition-property: margin, height, width;
+        transition-delay: 0.3s, 0.3s, 0s;
+      }
+      
+      .burger-menu--closed .bar:nth-of-type(3) {
+        width: 32px;
+      }
+      
+      .burger-menu--closed:hover .bar:nth-of-type(2) {
+        width: 100%;
+      }
+      
+      .burger-menu--closed:hover .bar:nth-of-type(3) {
+        width: 100%;
+      }
+      
+
+    }
+  }
+
+ .nav-active {
+    background: #EF233C;
+
+  }
+
+
+  .active{
+    display: block;
+
+  
+    animation: display 0.9s;
+  }
+
+
+  @keyframes display {
+  0% { opacity: 0; transform: translateY(50px); }
+  100% { opacity: 1; transform: translateY(0); }
+  }
+}
+
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      .overlay-content a:hover {
+        background: #EF233C;
+        color: white;
+      }
+
+      .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 30px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .overlay a {font-size: 20px}
+        .overlay .closebtn {
+        font-size: 30px;
+        top: 15px;
+        right: 35px;
+        }
+      }
+    
+
+      ::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: rgb(97, 95, 95);
+        border-radius: 10px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #EF233C;; /* color of the scrollbar handle on hover */
+    }
+
+    .btn{
+      margin-top: 10px;
+      background-color:#EF233C;
+      color:white;
+      text-decoration: none;
+      border: 2px solid transparent;
+      font-weight: bold;
+      padding: 5px;
+      border-radius: 30px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+      &:hover{
+        transform: scale(1.2);
+        }
+  } 
+
+  
