@@ -46,31 +46,31 @@
 
 
     const objectiveList=[
-        {
-            image:'consweldo-laptop.png',
-            title:'EWA (Earn Wage Access)',
-            role:'Fullstack Developer',
-            objective:[
-                `Consweldo is an Earned Wage Access(EWA) app that allows employees
-                 to access their earned wages before their scheduled pay period.` ,
-                ` Is categorized under FinTech and empowers employees, particularly 
-                those with lower incomes and financial challenges, by providing them with 
-                increased financial flexibility and opportunities.`
-                ],
-            responsibilities:[
-                "Translating UX-designed wireframes to production-level HTML/CSS/JS/VUEJS.",
-                "Develop APIs to facilitate communication between the frontend and backend systems.",
-                "Understanding, and integrating with Backend and third-party APIs such as (Instapay, Pesonet).",
-                "Write server-side code using PHP languages in Framework such as LARAVEL/CODEIGNITER.",
-                "Write/rewrite, review, and debug coded programs.",
-                "Analyze user needs and software requirements.",
-                "Code applications based on client requirements and finalized designs.",
-                "Design customizations for optimizing operational efficiency.",
-                "Support developed applications by addressing queries and fixing bugs/design flaws."
-              ],
-            techstack:['Laravel','VueJs','Mysql','Html','Css','Bootstrap5','Git','Gitlab'],
+        // {
+        //     image:'consweldo-laptop.png',
+        //     title:'EWA (Earn Wage Access)',
+        //     role:'Fullstack Developer',
+        //     objective:[
+        //         `Consweldo is an Earned Wage Access(EWA) app that allows employees
+        //          to access their earned wages before their scheduled pay period.` ,
+        //         ` Is categorized under FinTech and empowers employees, particularly 
+        //         those with lower incomes and financial challenges, by providing them with 
+        //         increased financial flexibility and opportunities.`
+        //         ],
+        //     responsibilities:[
+        //         "Translating UX-designed wireframes to production-level HTML/CSS/JS/VUEJS.",
+        //         "Develop APIs to facilitate communication between the frontend and backend systems.",
+        //         "Understanding, and integrating with Backend and third-party APIs such as (Instapay, Pesonet).",
+        //         "Write server-side code using PHP languages in Framework such as LARAVEL/CODEIGNITER.",
+        //         "Write/rewrite, review, and debug coded programs.",
+        //         "Analyze user needs and software requirements.",
+        //         "Code applications based on client requirements and finalized designs.",
+        //         "Design customizations for optimizing operational efficiency.",
+        //         "Support developed applications by addressing queries and fixing bugs/design flaws."
+        //       ],
+        //     techstack:['Laravel','VueJs','Mysql','Html','Css','Bootstrap5','Git','Gitlab'],
             
-        },
+        // },
         {
             image:'hris-laptop.png',
             title:'HRIS (Human Resource Information System)',
